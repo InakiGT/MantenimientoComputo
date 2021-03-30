@@ -1,0 +1,402 @@
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --negroClaro: #393939;
+    --negroOscuro: #2A2A2A;
+    --gris: #4A4A4A;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*Reset para Rems: 62.5%  = 10px de 16px*/
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--roboto);
+}
+
+/*----Globales----*/
+
+img {
+    max-width: 100%;
+}
+
+/*BOTONES*/
+.btn-negro {
+    background-color: var(--negroOscuro);
+    color: #FFF;
+    text-decoration: none;
+    padding: 1.8rem 3.4rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    max-width: 30%;
+    text-align: center;
+    margin: 0;
+    transition: all .4s ease;
+}
+
+.btn-negro:hover {
+    cursor: pointer;
+    background-color: #424242;
+}
+
+/*---Contenedores---*/
+.contenedor {
+    max-width: 95%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-inicial {
+    margin-top: 9rem;
+}
+
+header {
+    background-color: var(--negroClaro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.titulo-nav {
+    text-decoration: none;
+    font-family: var(--roboto);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.titulo-nav span {
+    font-weight: 300;
+}
+
+.opciones-nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 15rem);
+}
+
+.opciones-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.7rem;
+    flex: 0 0 calc(25% - .3rem);
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+.opciones-nav a:hover {
+    color: #bdbdbd;
+}
+
+.lista {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.total {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--negroOscuro)
+}
+
+.total span {
+    color: var(--negroClaro)
+}
+
+.centro {
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.centro-alineacion {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+.lista-grande {
+    font-size: 2.4rem;
+    color: var(--gris);
+    font-weight: 700;
+}
+
+.texto-centro {
+    text-align: center!important;
+}
+
+.portada {
+    background-color: #e1e1e1;
+}
+
+.borde {
+    -webkit-box-shadow: -2px 3px 22px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -2px 3px 22px 0px rgba(0,0,0,0.47);
+    box-shadow: -2px 3px 22px 0px rgba(0,0,0,0.47);
+}
+
+/*----Heros----*/
+.hero {
+    background-image: url(../img/z6adue8lisj51.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(141, 141, 141, 59%);
+}
+
+.hero p {
+    color: #FFF;
+    font-size: 4.8rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+
+.hero p span {
+    font-size: 4rem;
+}
+
+.hero-mantenimiento {
+    background-image: url(../img/53327503_10156402584350895_2463224457913696256_o.jpg);
+}
+
+.hero-perifericos {
+    background-image: url(../img/teclado-mecanico-mac-drevo-calibur-v2-1880875.jpg);
+}
+
+.hero-procesamiento {
+    background-image: url(../img/AMD-Threadripper-Pro-official.jpg);
+}
+
+.hero-computadora {
+    background-image: url(../img/20207131720_1.jpg);
+}
+
+.hero-ram {
+    background-image: url(../img/01.-Trident-Z-RGB.jpg);
+}
+
+.hero-bios {
+    background-image: url(../img/biosfondo.jpg);   
+}
+
+.hero-os {
+    background-image: url(../img/os.jpg);
+}
+
+.hero-antivirus {
+    background-image: url(../img/antivirusm.jpg);
+}
+
+.hero-ensamble {
+    background-image: url(../img/componentesPc.jpg);
+}
+
+.hero-post {
+    background-image: url(../img/hero-post.jpg);
+}
+
+.hero-software {
+    background-image: url(../img/software.png);
+}
+
+/*----Contenido Principal----*/
+
+.titulos-inicio {
+    color: var(--negroOscuro);
+    text-align: center;
+    font-size: 3.3rem;
+    margin-top: 5rem;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.texto-contenido-inicio {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.texto-contenido-inicio {
+    flex: 0 0 calc(60% - 2rem);
+}
+
+.texto-contenido-inicio p {
+    margin: 0;
+}
+
+.contenido-historia .imagen img{
+    height: 33rem;
+    width: 100%;
+    text-align: left;
+}
+
+.contenido-ram .texto-contenido-inicio {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.contenido-ram .imagen{
+    grid-column: 2 / 3;
+}
+
+.todo-corte {
+    background-image: url(../img/Do_AKBgXsAAtnwQ.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    width: 100%;
+    height: 53rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.todo-corte::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(204, 204, 204, 48%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mas-ram {
+    background-image: url(../img/RAM-RGB.webp);
+}
+
+.todo-corte .contenedor p {
+    color: #6D6D6D;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+
+.mas-ram .contenedor p {
+    color: #e4e4e4;
+}
+
+.todo-corte .contenedor a {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.7rem 6rem;
+    font-size: 2.2rem;
+    z-index: 1;
+    position: relative;
+}
+
+.enlace {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/*----Footer----*/
+footer {
+    margin-top: 5rem;
+}
+
+.footer-claro {
+    background-color: var(--gris);
+    margin-bottom: 0;
+}
+
+.footer-oscuro {
+    background-color: var(--negroClaro);
+    margin-top: 0;
+}
+
+.footer-oscuro p {
+    margin: 0;
+    text-align: center;
+    color: #FFF;
+    padding: 1.7rem 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navegacion-footer {
+    flex-direction: row-reverse;
+}
+
+/*----Contenido Secciones----*/
+.titulo-seccion {
+    text-align: center;
+    margin-top: 5.5rem;
+    color: var(--gris);
+    font-size: 3.5rem;
+}
+
+.subtitulo-seccion {
+    color: var(--negroOscuro);
+    font-size: 2.8rem;
+    margin-bottom: 0;
+}
+
+.contenido-seccion {
+    font-size: 1.9rem;
+    line-height: 1.6;
+}
+
+.contenedor-img {
+    margin: 3rem auto;
+    text-align: center;
+    max-width: 95%;
+}
+
+.img-seccion {
+    max-height: 65rem;
+}
